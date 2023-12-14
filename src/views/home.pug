@@ -10,16 +10,19 @@ html(lang="en")
         header
             h1 Noom
         main
+            div#profile
+                form#name
+                    input(placeholder="nickname", required, type="text")
+                    button#saveBtn Save
             div#welcome
-                form
+                form#main
                     input(placeholder="room name", required, type="text")
                     button Enter Room
+                h4 Open rooms:
+                ul
             div#room
                 h3
                 ul
-                form#name
-                    input(placeholder="nickname", required, type="text")
-                    button Save
                 form#msg
                     input(placeholder="message", required, type="text")
                     button Send
